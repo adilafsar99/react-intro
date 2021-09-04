@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <title>Intro to React</title>
+</head>
+<body class="bg-dark text-white">
+  <main class="container">
+    <div class="mt-1 border-bottom" id="heading-div">
+      <h1 class="text-center">Advanced Web Concepts</h1>
+    </div>
+    <div id="content-div">
+      <div class="sub-heading-div mt-1">
+        <a onclick="toggleLinks(this)" class="text-white toggler" data-bs-toggle="collapse" href="#react-div" aria-expanded="true" role="button"><h4 class="text-center">What is React?</h4></a>
+      </div>
+      <div class="collapse show sub-content-div" id="react-div">
+        <p>
+          React is a JavaScript library used to create clean and attractive User Interfaces. Specifically, it creates UI components that can be used in other programs therefore modulating the code and avoiding having to rewrite the same code again.
+        </p>
+        <p>
+          React was created by Facebook in 2013 and has since gone through many changes. Today most companies and developers use React in their projects. It has a large and faithful community that maintains and improves React which means its easy to find resources for it. React has a good number of reasons behind its popularity, some of them are mentioned below:
+        </p>
+        <ol>
+          <li>One of the major problems developers had with JavaScript was how its DOM couldn't detect changes in the code and reloaded the entire page to update the content of the page. React solves this problem with its own Virtual DOM where it renders the elements before rendering them on the real DOM. It compares the contents of both the DOMs and only changes what is different, and it does so in realtime.</li>
+          <li>In JavaScript, the code is not reusable as it is written in the context of the program which means that we have to rewrite code for repeatedly used components like header, slider, footer etc. However in React, the markup (HTML) and the functionality (JavaScript) are connected and placed inside "components". These components are like functions and can be reused in other programs.</li>
+          <li>Reacts ability to update the view efficiently and in realtime has made Single Page Applications (SAPs) an attractive choice for developers. A lot of major sites nowadays are SAPs as they are easy on the user's data plan because the page doesn't have to be reloaded when updating its content. Although React requires third party libraries in order to use Routing which creates separate urls for the same page.</li>
+        </ol>
+      </div>
+      <div class="sub-heading-div mt-1">
+        <a onclick="toggleLinks(this)" class="text-white toggler" data-bs-toggle="collapse" href="#pages-div" role="button"><h4 class="text-center">Single Page Vs Multi Page Sites</h4></a>
+      </div>
+      <div class="collapse sub-content-div" id="pages-div">
+        <p>
+          As more and more people started using internet, websites grew in size to accommodate the needs of the users. Many sites created multiples pages to inform their user about their ever growing content. But now, with the advent of smartphones, mobile browsing is the norm and people want websites that can easily be scrolled through on their mobiles. Modern libraries and frameworks allow for the creation of Single Page Applications (SPAs) that are designed to be viewed on mobile devices. Both of these types are explained below:
+        </p>
+        <h5>Single Page Applications (SPAs)</h5>
+        <p>
+          Single Page Applications (SPAs) make going through the sites easy because they don't have navigations or tabs that take you to other pages. Everything is displayed on a single page. There are several benefits to using SPAs:<br /><br />
+          (i) The content of your site is easily understood by the users as they can only scroll down or scroll back up so they can't get lost on your site.<br />
+          (ii) SPAs can use lazy loading, a concept that loads only that content which is currently being displayed on the user's screen while additional content is loaded when the user reaches it. This improves the site's speed and saves memory and data.<br />
+          (iii) As they have only a single page, SPAs are easy to manage and maintain.<br /><br />
+          However, there are drawbacks to SPAs too. The biggest problem is the lack of support for SEO because as a single page site, there aren't many places where you can place keywords as SEO works by seraching sites for keywords related to user's searched words. Also a single page means a single entry point so not many links to share to get user attention.
+        </p>
+        <h5>Multiple Page Applications (MPAs)</h5>
+        <p>
+          Multi page sites were the original format as they were used to promote and run businesses. Therefore, MPAs use their multiple pages to provide comprehensive information about their business. MPAs have a home page that gives an overview about the sites purpose and contains links that take users to their desired page. The drawbacks of SPAs are the benefits of MPAs:<br /><br />
+          (i) Multiple pages allow for the use of multiple keywords in every page which means greater chance of appearing at the top of search results.<br />
+          (ii) MPAs have different sections for different topics so each section can be promoted separately to target different category of users.<br /><br />
+          However, a major drawback of MPAs is the difficulty to mange them. The things to be managed are keywords for SEO, updation of content and  security among others. Also MPAs can take a long time to load which increases the bounce rate (how quickly users leave your sites). Responsiveness is also an issue as navigations and tabs don't translate well on mobile devices.
+        </p>
+      </div>
+      <div class="sub-heading-div mt-1">
+        <a onclick="toggleLinks(this)" class="text-white toggler" data-bs-toggle="collapse" href="#vs-angular-div" role="button"><h4 class="text-center">Angular Vs React</h4></a>
+      </div>
+      <div class="collapse sub-content-div" id="vs-angular-div">
+        <p>
+          As explained above, React is a JavaScript library that is used to create interactive and reusable UI components. On the other hand, Angular is a Front-End Development framework used to make dynamic websites. React alone cannot be used to create fully functional websites as it requires other libraries like Redux for state management and React Router for routing. In contrast, Angular is a complete solution for creating fully functional websites. Below are some of the differences between React and Angular:
+        </p>
+        <table class="table bg-dark text-white">
+          <tr>
+            <th class>React</th>
+            <th>Angular</th>
+          </tr>
+          <tr>
+            <td>
+              React only creates UI components therefore other libraries can be used alongside it to fully customize your websites.
+            </td>
+            <td>
+              Angular is a framework with built-in components and therefore does not allow third party tools which leaves little room for customization.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              React has a Virtual DOM that it stores in the memory. Before changing the real DOM, React compares the contents of the virtual and real DOMs and only updates the parts that are different. This means the entire page is not reloaded.
+            </td>
+            <td>
+              Angular uses the real DOM which means no matter how small the change, the entire page has to be reloaded each time.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              React uses one-way data binding where changing the logic (code) changes the view (UI).
+            </td>
+            <td>
+              Angular uses two-way data binding where upon changing the view or the logic, the other is updated automatically.
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="sub-heading-div mt-1">
+        <a onclick="toggleLinks(this)" class="text-white toggler" data-bs-toggle="collapse" href="#vs-framework-div" role="button"><h4 class="text-center">Library Vs Framework</h4></a>
+      </div>
+      <div class="collapse sub-content-div" id="vs-framework-div">
+        <p>
+          Libraries and Frameworks both contain code that can be used to speed up the development process. However, a library is used to add some desired functionality to the site while a framework provides a strict structure for the site. Both of them are explained below:
+        </p>
+        <h5>Library</h5>
+        <p>
+          Writing code to create large websites can become very tedious when you have to repeat the same things over like recreating navigations, forms etc from start. In order to ease this process, libraries were created which include reusable components and functions to avoid repeating the code for recurring components in a site. A library is a file that contains functions or components packaged together. We import the library when we want to use its code and we can call the individual functions and components where we want to use them. Which means we are in control when using a library.
+        </p>
+        <h5>Framework</h5>
+        <p>
+          When productivity is preferred over customization, frameworks are used. A framework provides a rigid structure to create websites. All the components and tools required to create a site are included in the framework which saves the time needed to plan out the structure of the site and allows developers to utilize the framework's built-in tools to create fully functional sites. When using frameworks, the framework is in control and there is little room for customization.
+        </p>
+      </div>
+      <div class="sub-heading-div mt-1">
+        <a onclick="toggleLinks(this)" class="text-white toggler" data-bs-toggle="collapse" href="#vs-dom-div" role="button"><h4 class="text-center">DOM Vs Virtual DOM</h4></a>
+      </div>
+      <div class="collapse sub-content-div" id="vs-dom-div">
+        <p>
+          Document Object Model (DOM) is an abstract model of the HTML structure of the web page in the form of an object where each HTML element is treated as a node. These nodes are managed in the DOM in the form of a tree structure. We can traverse the DOM to access these nodes and update their content. But the DOM has a weakness, it cannot detect which node has been altered to change the view for the user so every time a change is made to the code no matter how small, the entire tree has to be updated. React uses a Virtual DOM to solve this problem.
+        </p>
+        <h5>Virtual DOM</h5>
+        <p>
+          React creates a copy of the DOM as a JS file and stores it in the memory at the time of load. This copy is called the Virtual DOM. This DOM does not have the ability to update the view. Whenever the code changes, React updates the Virtual DOM then compares it with the real DOM to search for changes. It then updates the view for only those nodes that were changed while leaving everything as it is. This process is called Reconciliation. The advantage of Virtual DOM is that the page doesn't have to be reloaded and the view is updated in realtime.
+        </p>
+      </div>
+      <div class="sub-heading-div mt-1">
+        <a onclick="toggleLinks(this)" class="text-white toggler" data-bs-toggle="collapse" href="#binding-div" role="button"><h4 class="text-center">One Way and Two Way Data Binding</h4></a>
+      </div>
+      <div class="collapse sub-content-div" id="binding-div">
+        <p>
+          Data binding is the concept of connecting the logic (code) with the view (UI). This concept is being used in nearly every modern library and framework which use components that contain the code for the UI of that component along with its logic. Data binding is of two types:<br />(i) One-Way which is used by React.<br />(ii) Two-way which is used by Angular.
+        </p>
+        <h5>One-Way Data Binding</h5>
+        <p>
+          In this type, only one of two things can happen:<br />
+          (i) Any change in the logic is reflected in the view.<br />
+          (ii) Any change in the view is reflected in the logic.<br />
+          React is capable of the former by default. This means that when the source code is changed, the view for that component is updated which is bound to that source code. This technique allows React to isolate the components so it makes debugging easier because we know the bug for that component lies within the component itself.
+        </p>
+        <h5>Two-Way Data Binding</h5>
+        <p>
+          In Angular, the view and logic are connected so two-way data binding is available by default. This means that both of the above mentioned possibilities happen at once: Changing the logic changes the view and changing the view changes the logic. Two-way binding can be implemented in React by using event handlers to update the logic.
+        </p>
+      </div>
+    </div>
+  </main>
+  <script src="bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
